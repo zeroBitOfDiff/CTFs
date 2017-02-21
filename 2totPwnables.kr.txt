@@ -1,0 +1,61 @@
+// pwnable.kr tot 2
+
+// md5 collision
+// https://www.youtube.com/watch?v=Nmoi9UoiuBM
+// i used this video to help me through it
+
+// cat col.c to see the c file
+// found that im trying to match 0x21DD09EC
+
+
+// disas func in gdb
+// set up a breakpoint at the for loop to see 
+// what values are being added
+// we find through gdb that the function is just looping through the
+// passcode and summing 4 bytes at a time 
+
+// adds the number representation of the hex value looping through it
+// also added stipulation passcode length should be 20 bytes
+
+// divide 568134124 by 5(is the decimal of hash we're comparing to)
+// if you divide, you will see that you get a remainder
+
+// since the passcode is casted to int* we need to sum basically 
+// 5 int blocks written in hex in a little endian fashion
+
+// ive seen multiple ways of doing this but i prefer through perl
+// $(perl -e 'print "\xc8\xce\xc5\x06"x4 . "\xcc\xce\xc5\x06"')
+// http://taishi8117.github.io/2015/10/26/pwnable-easy1/
+
+
+
+
+
+
+// then python hex()
+
+
+#include <stdio.h>
+#include <stdlib.h>
+
+unsigned long check_password(const char* p)
+{
+	int* ip = (int*)p;
+	int i;
+	int res=0;
+	for(i=0; i<5; i++)
+	{
+		res += ip[i];
+	}
+	return res;
+}
+
+int main(void)
+{
+	char*p;
+	
+	p=malloc(size)
+
+
+	return 0;
+}

