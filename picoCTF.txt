@@ -1,0 +1,82 @@
+picoCTF 
+
+https://picoctf.com/
+
+These are the first CTFs I worked on. They are intros but still real fun. 
+
+
+
+Tyroano Hex
+	hexadecimal number 0xdebc4315
+	convert to decimal numbers
+	
+	use asciitohex.com
+	copy debc4315
+	
+	3736879893
+	
+
+web exploitation
+
+	inspect the element homepage.html
+
+<!-- In case you forget, the password for this site is: 
+flag_46b8a7a2081d079c71dea276d6fc509fcd41ff70 -->
+
+
+crypto
+	
+	Caesar cipher
+		is a shift cipher. a substitution cipher.
+	encrypted text
+	rfcqcapcrnyqqnfpyqcgqjnqpeaidbhgnsjkllvrwypkicgzomz
+	shift 24
+	thesecretpassphraseislpsrgckfdjipulmnnxtyarmkeibqob
+	
+	
+misc
+	RoboPhoto
+	
+	reverse image search
+	use tineye.com
+	the positronic man
+	
+	
+misc
+	Common Vulnerability Exercise
+	
+	the CVE Identifier for a 2014 vulnerability that 
+	allowed arbitrary code execution in Firefox via a 
+	buffer overflow in a speech codec
+	
+	CVE-2014-1542
+	
+	https://www.rapid7.com/db/search
+		vulnerability & exploit database
+		
+
+Crypto
+	the valley of fear
+	
+	recover text 
+	(1, 9, 4) the
+	(4, 2, 8) flag
+	(4, 8, 3) is
+	(7, 1, 5) Ceremonial
+	(8, 10, 1) plates
+	
+	paragraph, line, word
+	
+
+web exploitation
+
+	internet inspection
+	
+	another inspect element
+	i deleted an element and expanded others 
+	flag_8f14f9f5836bf4a2acef0bdeb5a1b31115827980
+	
+
+
+	
+	

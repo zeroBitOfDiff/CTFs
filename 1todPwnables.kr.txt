@@ -1,0 +1,54 @@
+pwnables.kr
+
+on the first toddler 
+
+ssh into the site with the creds 
+
+
+ssh fd@pwnable.kr -p2222
+
+pswd: guest
+
+next 
+	
+	// command to list file with permissions
+	$ ls -l 
+		
+	// returns your uid 
+	$ whoami
+		
+// so we need to read this a either root or fd2
+// we are not going to get root so we need to get fd2 inorder
+// to get access to flag file
+
+// ran the executible ./fd
+
+// then ran ./fd 123
+
+// then piped into python
+	$ python
+	
+	>>> 0x1234
+	4660
+	>>> exit()
+
+// read() function and fd file descriptor
+// the key to this pwn is to get the fd to be 0
+// which is the code for stdin
+// 4660 is the decimal of the hex 1234 which when subtracted
+// with 4660 is 0
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
