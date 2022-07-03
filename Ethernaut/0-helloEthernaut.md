@@ -54,6 +54,20 @@ await contract.password()
 contract.authenticate("ethernaut0")
 ```
 
+you can also see that the constructor in the smart contract created 
+passes a secret to password
+```
+function Instance(string _password) public { 
+    password = _password; 
+}
+```
+
+check that the level was passed
+```
+await contract.getCleared();
+```
+
+
 
 
 
