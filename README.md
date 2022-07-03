@@ -6,10 +6,11 @@ These are CTFs that I've worked on and other Knight Sec practice modules.
   participated in.
   
 * Pwnables.kr is a website which hosts a ton of mock pwnable ctfs. 
+	* http://pwnable.kr/
 
 * RSA is a crypto project which I am working on. 
 	* This project was started on the heels of the Boston Key Party CTF 
 	* RSA Buffet. 
 
 * Ethernaut
-	   
+	* https://ethernaut.openzeppelin.com/
