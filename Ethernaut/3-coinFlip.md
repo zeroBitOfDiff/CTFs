@@ -1,5 +1,13 @@
 
-we are tasked to guess the coin toss 10 times in a row. The below contract is the one loaded into remixIDE.
+we are tasked to guess the coin toss 10 times in a row. The below contract is the one loaded into remixIDE. 
+
+loading from github
+```
+https://github.com/OpenZeppelin/ethernaut/blob/master/contracts/contracts/levels/CoinFlip.sol
+```
+
+in remix use the injected Web3.
+
 
 ```
 // SPDX-License-Identifier: MIT
@@ -40,7 +48,9 @@ contract CoinFlip {
 }
 ```
 
-the malicious contract is rerun alongside the vulnerable contract on remix.
+the malicious contract is rerun alongside the vulnerable contract on remix. 
+
+in remix deploy malFlip
 ```
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.0;
@@ -80,6 +90,7 @@ contract CoinFlip {
 }
 
 contract malFlip {
+  // use the ethernaut account info
   CoinFlip public oc = CoinFlip(0x15787F394B450fD7fFD754e4057C5E18c13d75fF);
   using SafeMath for uint256;
   uint256 lastHash;
